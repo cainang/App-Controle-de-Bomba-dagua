@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "App-IOT",
+    "name": "Bomba de Água",
     "slug": "App-IOT",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,10 +21,24 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.cainan43.AppIOT"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1134f5da-eb75-454a-bbde-32f73bd93b75"
+      }
+    },
+    "plugins": [
+      ["expo-build-properties",
+      {
+        "android": {
+          "usesCleartextTraffic": true
+        }
+      }]
+    ]
   }
 }
